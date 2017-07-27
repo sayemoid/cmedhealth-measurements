@@ -1,6 +1,9 @@
 package calculation.common.utils;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+
+import org.joda.time.LocalDate;
+import org.joda.time.Months;
+
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -17,9 +20,13 @@ public class Utility {
         int day = Integer.parseInt(parts[0]); // 004
         int month = Integer.parseInt(parts[1]);
         int year = Integer.parseInt(parts[2]);
-        LocalDate birthday = LocalDate.of(year, month, day);
-
-        return  (int) birthday.until(LocalDate.now(), ChronoUnit.MONTHS);
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.DAY_OF_MONTH,day);
+        calendar.set(Calendar.MONTH,month);
+        calendar.set(Calendar.YEAR,year);
+        LocalDate birthdate = LocalDate.fromCalendarFields(calendar);
+        LocalDate now = new LocalDate();
+        return Months.monthsBetween(birthdate,now).getMonths();
     }
 
     public static double getBMIByHeightAndWeight(double height, double weight) {
