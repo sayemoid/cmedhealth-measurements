@@ -10,11 +10,11 @@ import domains.UserMeasurement;
 
 public class PulseCalculatorAdult {
 
-    private static final String ABNORMAL = "abnormal";
-    private static final String NORMAL = "normal";
+    public static final String ABNORMAL = "abnormal";
+    public static final String NORMAL = "normal";
 
-    private static final String SEVERITY_ABNORMAL = "alarming";
-    private static final String SEVERITY_NORMAL = "healthy";
+    public static final String SEVERITY_ABNORMAL = "alarming";
+    public static final String SEVERITY_NORMAL = "healthy";
 
     public static CmedStatusRemarks examineAdultPulse(UserMeasurement userMeasurement) {
 

@@ -10,19 +10,19 @@ import domains.enums.BloodSugarMeasurementTime;
  */
 public class BloodSugarAdult {
 
-    private static final String DIABETES_VERY_LOW = "very_low";
-    private static final String DIABETES_LOW = "low";
-    private static final String DIABETES_NORMAL = "normal";
-    private static final String DIABETES_HIGH = "high";
-    private static final String DIABETES_HIGH_NORMAL = "high_normal";
-    private static final String DIABETES_VERY_HIGH = "very_high";
+    public static final String DIABETES_VERY_LOW = "very_low";
+    public static final String DIABETES_LOW = "low";
+    public static final String DIABETES_NORMAL = "normal";
+    public static final String DIABETES_HIGH = "high";
+    public static final String DIABETES_HIGH_NORMAL = "high_normal";
+    public static final String DIABETES_VERY_HIGH = "very_high";
 
-    private static final String DIABETES_SEVERITY_VERY_LOW = "emergency";
-    private static final String DIABETES_SEVERITY_LOW = "alarming";
-    private static final String DIABETES_SEVERITY_NORMAL = "healthy";
-    private static final String DIABETES_SEVERITY_HIGH = "emergency";
-    private static final String DIABETES_SEVERITY_HIGH_NORMAL = "alarming";
-    private static final String DIABETES_SEVERITY_VERY_HIGH = "emergency";
+    public static final String DIABETES_SEVERITY_VERY_LOW = "emergency";
+    public static final String DIABETES_SEVERITY_LOW = "alarming";
+    public static final String DIABETES_SEVERITY_NORMAL = "healthy";
+    public static final String DIABETES_SEVERITY_HIGH = "emergency";
+    public static final String DIABETES_SEVERITY_HIGH_NORMAL = "alarming";
+    public static final String DIABETES_SEVERITY_VERY_HIGH = "emergency";
 
     public static CmedStatusRemarks examineAdultBloodSugar(UserMeasurement userMeasurement, String bloodSugarMeasurementTimeTag) {
 

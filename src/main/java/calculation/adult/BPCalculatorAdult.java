@@ -8,18 +8,18 @@ import domains.UserMeasurement;
  */
 public class BPCalculatorAdult {
 
-    private static final String LOW = "low";
-    private static final String NORMAL = "normal";
-    private static final String HIGH_NORMAL = "high_normal";
-    private static final String MILD_HIGH = "mild_high";
-    private static final String MODERATE_HIGH = "moderate_high";
-    private static final String SEVERE_HIGH = "severe_high";
-    private static final String ABNORMAL = "abnormal";
+    public static final String LOW = "low";
+    public static final String NORMAL = "normal";
+    public static final String HIGH_NORMAL = "high_normal";
+    public static final String MILD_HIGH = "mild_high";
+    public static final String MODERATE_HIGH = "moderate_high";
+    public static final String SEVERE_HIGH = "severe_high";
+    public static final String ABNORMAL = "abnormal";
 
-    private static final String SEVERITY_HEALTHY = "healthy";
-    private static final String SEVERITY_ALARMING = "alarming";
-    private static final String SEVERITY_EMERGENCY = "emergency";
-    private static final String SEVERITY_ABNORMAL = "alarming";
+    public static final String SEVERITY_HEALTHY = "healthy";
+    public static final String SEVERITY_ALARMING = "alarming";
+    public static final String SEVERITY_EMERGENCY = "emergency";
+    public static final String SEVERITY_ABNORMAL = "alarming";
 
     public static CmedStatusRemarks examineAdultBP(UserMeasurement userMeasurement) {
 

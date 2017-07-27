@@ -8,15 +8,15 @@ import domains.UserMeasurement;
  */
 public class BMICalculatorAdult {
 
-    private static final String BMI_UNDERWEIGHT = "underweight";
-    private static final String BMI_NORMAL = "normal";
-    private static final String BMI_OVERWEIGHT = "overweight";
-    private static final String BMI_OBESITY = "obesity";
+    public static final String BMI_UNDERWEIGHT = "underweight";
+    public static final String BMI_NORMAL = "normal";
+    public static final String BMI_OVERWEIGHT = "overweight";
+    public static final String BMI_OBESITY = "obesity";
 
-    private static final String BMI_SEVERITY_UNDERWEIGHT = "alarming";
-    private static final String BMI_SEVERITY_NORMAL = "healthy";
-    private static final String BMI_SEVERITY_OVERWEIGHT = "alarming";
-    private static final String BMI_SEVERITY_OBESITY = "emergency";
+    public static final String BMI_SEVERITY_UNDERWEIGHT = "alarming";
+    public static final String BMI_SEVERITY_NORMAL = "healthy";
+    public static final String BMI_SEVERITY_OVERWEIGHT = "alarming";
+    public static final String BMI_SEVERITY_OBESITY = "emergency";
 
     public static CmedStatusRemarks examineAdultBMI(UserMeasurement userMeasurement) {
 
