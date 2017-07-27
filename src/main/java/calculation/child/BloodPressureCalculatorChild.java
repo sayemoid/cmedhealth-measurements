@@ -10,12 +10,12 @@ import domains.UserMeasurement;
  */
 public class BloodPressureCalculatorChild {
 
-    private static final String LOW = "low";
-    private static final String NORMAL = "normal";
-    private static final String HIGH = "high";
+    public static final String LOW = "low";
+    public static final String NORMAL = "normal";
+    public static final String HIGH = "high";
 
-    private static final String SEVERITY_HEALTHY = "healthy";
-    private static final String SEVERITY_EMERGENCY = "emergency";
+    public static final String SEVERITY_HEALTHY = "healthy";
+    public static final String SEVERITY_EMERGENCY = "emergency";
 
     public static CmedStatusRemarks examineChildBP(UserMeasurement userMeasurement) {
 

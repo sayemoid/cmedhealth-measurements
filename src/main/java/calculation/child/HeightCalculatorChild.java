@@ -12,14 +12,14 @@ import domains.enums.Gender;
  */
 public class HeightCalculatorChild {
 
-    private static final String HEIGHT_SHORT = "short";
-    private static final String HEIGHT_TALL = "tall";
-    private static final String HEIGHT_NORMAL = "normal";
+    public static final String HEIGHT_SHORT = "short";
+    public static final String HEIGHT_TALL = "tall";
+    public static final String HEIGHT_NORMAL = "normal";
 
 
-    private static final String HEIGHT_SEVERITY_SHORT = "alarming";
-    private static final String HEIGHT_SEVERITY_NORMAL = "healthy";
-    private static final String HEIGHT_SEVERITY_TALL = "alarming";
+    public static final String HEIGHT_SEVERITY_SHORT = "alarming";
+    public static final String HEIGHT_SEVERITY_NORMAL = "healthy";
+    public static final String HEIGHT_SEVERITY_TALL = "alarming";
 
     public static CmedStatusRemarks examineHeight(UserMeasurement userMeasurement) {
 
