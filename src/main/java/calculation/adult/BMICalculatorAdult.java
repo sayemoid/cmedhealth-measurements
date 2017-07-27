@@ -26,8 +26,6 @@ public class BMICalculatorAdult {
 
     }
 
-
-
     private static CmedStatusRemarks getStatusAndRemarksForBMI(UserMeasurement userMeasurement) {
 
         CmedStatusRemarks cmedStatusRemarks = new CmedStatusRemarks();

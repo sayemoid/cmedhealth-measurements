@@ -1,12 +1,10 @@
 package domains;
 
+import org.joda.time.LocalDate;
+import org.joda.time.Months;
+
 import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by Rajaul Islam on 5/30/2017.
@@ -64,14 +62,20 @@ public class CmedPerson extends BaseEntity{
         this.dob = dob;
     }
 
+//    public Integer getAgeInMonths() {
+//        if(birthday == null)
+//            return 0;
+//        Calendar cal = Calendar.getInstance();
+//        cal.setTime(this.birthday);
+//        LocalDateTime birthDate = LocalDateTime.ofInstant(cal.getTime().toInstant(), ZoneId.systemDefault());
+//        Duration duration = Duration.between(birthDate, LocalDateTime.now());
+//        return Math.toIntExact((duration.toDays() / 30));
+//    }
+
     public Integer getAgeInMonths() {
-        if(birthday == null)
-            return 0;
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(this.birthday);
-        LocalDateTime birthDate = LocalDateTime.ofInstant(cal.getTime().toInstant(), ZoneId.systemDefault());
-        Duration duration = Duration.between(birthDate, LocalDateTime.now());
-        return Math.toIntExact((duration.toDays() / 30));
+        LocalDate birthdate = new LocalDate(birthday);
+        LocalDate now = new LocalDate();
+        return Months.monthsBetween(birthdate,now).getMonths();
     }
 
     public boolean isUserAdult() {
