@@ -9,13 +9,13 @@ import domains.UserMeasurement;
  */
 public class Spo2CalculatorCommon {
 
-    private static final String NORMAL = "normal";
-    private static final String ALARMING = "alarming";
-    private static final String EMERGENCY = "emergency";
+    public static final String NORMAL = "normal";
+    public static final String ALARMING = "alarming";
+    public static final String EMERGENCY = "emergency";
 
-    private static final String SEVERITY_NORMAL = "healthy";
-    private static final String SEVERITY_ALARMING = "alarming";
-    private static final String SEVERITY_EMERGENCY = "emergency";
+    public static final String SEVERITY_NORMAL = "healthy";
+    public static final String SEVERITY_ALARMING = "alarming";
+    public static final String SEVERITY_EMERGENCY = "emergency";
 
     public static CmedStatusRemarks examineSpo2(UserMeasurement userMeasurement) {
 

@@ -11,15 +11,15 @@ import domains.UserMeasurement;
 public class TemparatureCalculatorCommon {
 
 
-    private static final String NORMAL = "normal";
-    private static final String ALARMING_LOW = "low";
-    private static final String ALARMING_FEVER = "fever";
-    private static final String EMERGENCY = "emergency";
+    public static final String NORMAL = "normal";
+    public static final String ALARMING_LOW = "low";
+    public static final String ALARMING_FEVER = "fever";
+    public static final String EMERGENCY = "emergency";
 
-    private static final String SEVERITY_NORMAL = "healthy";
-    private static final String SEVERITY_ALARMING_LOW = "alarming";
-    private static final String SEVERITY_ALARMING_FEVER = "alarming";
-    private static final String SEVERITY_EMERGENCY = "emergency";
+    public static final String SEVERITY_NORMAL = "healthy";
+    public static final String SEVERITY_ALARMING_LOW = "alarming";
+    public static final String SEVERITY_ALARMING_FEVER = "alarming";
+    public static final String SEVERITY_EMERGENCY = "emergency";
 
     public static CmedStatusRemarks examineTemp(UserMeasurement userMeasurement) {
 
