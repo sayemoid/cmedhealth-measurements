@@ -11,20 +11,34 @@ import java.util.Date;
  */
 public class Utility {
 
-    public static int getAgeInMonths(Date dob) {
+//    public static int getAgeInMonths(Date dob) {
+//
+//        String dbString = dob.toString();
+//
+//        String[] parts = dbString.split("-");
+//        System.out.println(dbString);
+//        int day = Integer.parseInt(parts[0]); // 004
+//        int month = Integer.parseInt(parts[1]);
+//        int year = Integer.parseInt(parts[2]);
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.set(Calendar.DAY_OF_MONTH,day);
+//        calendar.set(Calendar.MONTH,month);
+//        calendar.set(Calendar.YEAR,year);
+//        LocalDate birthdate = LocalDate.fromCalendarFields(calendar);
+//        LocalDate now = new LocalDate();
+//        return Months.monthsBetween(birthdate,now).getMonths();
+//    }
 
-        String dbString = dob.toString();
+    public static int getAge(Date date) {
+        if (date == null) return 0;
+        Calendar cal1 = Calendar.getInstance();
+        Calendar cal2 = Calendar.getInstance();
+        cal2.setTime(date);
+        return cal1.get(Calendar.YEAR) - cal2.get(Calendar.YEAR);
+    }
 
-        String[] parts = dbString.split("-");
-        System.out.println(dbString);
-        int day = Integer.parseInt(parts[0]); // 004
-        int month = Integer.parseInt(parts[1]);
-        int year = Integer.parseInt(parts[2]);
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.DAY_OF_MONTH,day);
-        calendar.set(Calendar.MONTH,month);
-        calendar.set(Calendar.YEAR,year);
-        LocalDate birthdate = LocalDate.fromCalendarFields(calendar);
+    public static int getAgeInMonths(Date birthDay) {
+        LocalDate birthdate = new LocalDate(birthDay);
         LocalDate now = new LocalDate();
         return Months.monthsBetween(birthdate,now).getMonths();
     }
